@@ -1,0 +1,108 @@
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    border: solid black; 
+    align-items: center;
+    height: 60px;
+    background-color: rgb(143, 143, 143);
+    justify-content: space-around;
+    
+}
+.adote {
+    color: yellow;
+    font-weight: bold;
+    font-size: 33px;
+
+}
+h1:hover {
+    color: rgb(0, 0, 0);
+}
+
+.opcoes{
+   display: flex;  
+}
+
+.link{
+    color: yellow;
+    margin-left: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(117, 117, 117);
+    border: solid rgb(121, 121, 121);
+    border-radius: 10px;
+}
+a:hover {
+    color: rgb(0, 0, 0);
+}
+/*-----------------------------*/ /*Consegui terminar e fazer os critérios de deixar 4 colunas quando defini um width para a div ".animais-dog" 
+e aumentei o tamanho das imagens até ficar com 4 colunas, teria outra forma de fazer isso?*/   
+
+/* quando não defini um width para a div, ficaram em uma coluna só e o flex wrap não funcionava, 
+ nao quebrando as colunas para uma ao lado da outra*/
+
+
+
+h2 {
+    display: flex;
+    font-size: 35px;
+    text-transform: uppercase;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+
+.animais-dog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+    
+}
+main div img{    /* aprendi na monitoria, peguei as tags coloquei no css e econnomizei muita linha de codigo chamando direto asim*/
+    height: 250px;
+    width: 200px; 
+	margin: 1%;  
+	box-shadow: 2px 2px 2px rgb(10, 10, 10);
+    flex-basis: 20%;
+}
+
+
+.animais-cat{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+    
+}
+
+.rodape{
+    border-top:black solid 2px;
+    height: 60px;
+    background-color:rgb(143, 143, 143);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 600px) {
+    .adote {
+        display: none;
+    }
+
+    .cabecalho {
+        height: 100px;
+    }
+    .opcoes{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
